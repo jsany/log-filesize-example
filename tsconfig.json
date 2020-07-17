@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "lib": ["ES2015","ESNext","DOM","DOM.Iterable","ScriptHost"],
+    "strict": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"], // src 目录别名
+    },
+    "allowJs": true,
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src/**/*", "./typings.d.ts"],
+  "exclude": [
+    "node_modules",
+    "**/test/*",
+    "__test__",
+    "**/*.spec.ts",
+    "lib",
+    "es",
+    "dist",
+    "build",
+    "webpack.config.js"
+  ]
+}

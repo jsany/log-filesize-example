@@ -1,0 +1,6 @@
+/dist
+node_modules
+/lib
+/es
+/bin
+webpack.config.js
