@@ -8,11 +8,11 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/jsany/log-filesize-example/blob/main/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/jsany/@jsany/log-filesize-example" />
+    <img alt="GitHub" src="https://img.shields.io/github/license/jsany/log-filesize-webpack-plugin">
   </a>
 </p>
 
-> example of log-filesize-webpack-plugin
+> example of [log-filesize-webpack-plugin]([log-filesize-webpack-plugin](https://github.com/jsany/log-filesize-webpack-plugin))
 
 ### 🏠 [Homepage](https://github.com/jsany/log-filesize-example#readme)
 
