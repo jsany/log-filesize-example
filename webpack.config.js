@@ -11,7 +11,8 @@ const LogFilesizeWebpackPlugin = require('@jsany/log-filesize-webpack-plugin');
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    index: resolve(__dirname, './src/index.tsx')
+    index: resolve(__dirname, './src/index.tsx'),
+    index2: resolve(__dirname, './src/index2.tsx')
   },
   output: {
     path: resolve(__dirname, './dist'),
@@ -131,14 +132,18 @@ module.exports = {
     splitChunks: {
       chunks: 'all',
       cacheGroups: {
-        common: {
-          // 抽离自己写的公共代码
-          name: 'commons',
-          chunks: 'all',
-          minSize: 0, // 只要超出0字节就生成一个新包
+        default: {
+          name: 'common',
+          chunks: 'initial',
+          minSize: 0,
           minChunks: 2,
-          priority: 10,
-          reuseExistingChunk: true
+          priority: -20
+        },
+        vendors: {
+          test: /[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|(\@babel)|core-js)[\\/]/,
+          chunks: 'initial',
+          name: 'vendor',
+          priority: -10
         }
       }
     }
